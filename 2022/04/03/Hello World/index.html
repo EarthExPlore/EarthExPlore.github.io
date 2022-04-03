@@ -411,17 +411,22 @@
     })(window, document);
   </script>
 
-
-
-
-
-
-
-
-
-
-
-
+<div id="gitmen"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var id = window.location.href
+var gitment = new Gitment({
+  id: id, // 可选。默认为 location.href
+  owner: 'EarthExPlore',
+  repo: 'https://earthexplore.github.io/',
+  oauth: {
+    client_id: 'af6e269cc7fa76a3b2bb',
+    client_secret: 'b69aac5cedba263045b565644de27ee751f34910',
+  },
+})
+gitment.render('gitmen')
+</script>
 
 
 
